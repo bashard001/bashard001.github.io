@@ -9,7 +9,6 @@
 #left {
     float: left;
     position: relative;
-    left: 3%;
     
   }
 
@@ -37,4 +36,41 @@
   #right a:hover {
     background-color: rgb(97, 163, 91);
     color: black;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+input[type=text], textarea {
+
+  width: 100%;
+  padding: 10px;
+  border: 1px solid black;
+  margin-top: 5px;
+  margin-bottom: 12px;
+  resize: vertical;
+}
+
+.column {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+  padding: 20px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+  footer {
+
+    display: block;
+  }
+
+  
+
+  button :hover{
+
+    background-color: aqua;
   }
