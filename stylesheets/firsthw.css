@@ -5,10 +5,6 @@ body, html {
   color: #777;
 }
 
-nav {
-
-  font-family: 'Times New Roman', Times, serif;
-}
 
 .header {
     position: relative;
@@ -16,6 +12,7 @@ nav {
     height: 100px;
     color: #fff;
     background: #30948D;
+    font-family: sans-serif;
 }
 
 .bg1, .bg2, .bg3 {
