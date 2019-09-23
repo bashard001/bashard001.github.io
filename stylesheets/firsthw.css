@@ -107,3 +107,13 @@ h3 {
   footer {
     display: flex;
   }
+
+  @media screen and (max-width:666px){
+
+    #left {
+      max-width: 100px;
+      font-size: 8px;
+
+    }
+    
+  }
