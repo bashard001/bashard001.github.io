@@ -111,11 +111,13 @@ div.column1 img {
       padding: 0px 5px;
     }
     .column {
+      float: left;
       width: 100%;
       margin-top: 6px;
       padding: 20px;
     }
     .column1{
+      float: left;
       width: 100%;
     margin-top: 0px;
     padding: 20px;
