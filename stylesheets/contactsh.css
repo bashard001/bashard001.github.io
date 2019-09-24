@@ -76,6 +76,7 @@ div.row {
   padding: 25px;
 }
 div.column1 img {
+  width: 95%;
   border-radius: 25px;
 }
 
@@ -94,4 +95,35 @@ div.column1 img {
   button :hover{
 
     background-color: aqua;
+  }
+  @media screen and (max-width:666px){
+
+    #left {
+      position: relative;
+      top:25px;
+      max-width: 150px;
+      font-size: 8px;
+
+    }
+    #right a{
+      position: relative;
+      top: 15px;
+      padding: 0px 5px;
+    }
+    .column {
+      width: 100%;
+      margin-top: 6px;
+      padding: 20px;
+    }
+    .column1{
+      width: 100%;
+    margin-top: 0px;
+    padding: 20px;
+    }
+    div.column1 img {
+      width: 100%;
+    }
+    p {
+      margin: 15px;
+    }
   }

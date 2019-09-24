@@ -111,9 +111,16 @@ h3 {
   @media screen and (max-width:666px){
 
     #left {
-      max-width: 100px;
+      position: relative;
+      top:25px;
+      max-width: 150px;
       font-size: 8px;
 
+    }
+    #right a{
+      position: relative;
+      top: 15px;
+      padding: 0px 5px;
     }
     
   }
