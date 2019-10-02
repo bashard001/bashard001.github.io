@@ -5,7 +5,9 @@ body, html {
   color: #777;
 }
 .header {
-    position: relative;
+    position: sticky;
+    top: 0px;
+    z-index: 1;
     width: 100%;
     height: 100px;
     color: #fff;

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <title>about me</title>
         <link rel="stylesheet" href="stylesheets/normalize.css">
@@ -16,6 +16,96 @@
                                 <a href="contacts.html">Contacts</a>
                           </section>
             </nav>
+
+            <div class="container">
+              <div class="box1">
+                
+                <img class="imgab" src="stylesheets/bashar3.jpg" alt="my pic">
+                
+                
+                
+                first box grid-auto-rows and grid-auto-columns specify the sizing for grid tracks that are generated automatically. The properties come-in really handy when you want to be able to add items that will spill onto new rows/columns, but want to retain some control over the sizing of the implicitly created rows/columns.
+
+                  Both properties default to a value of auto and they are defined on the grid container (the element with display: grid). Let’s take this example where we define 2 columns and 2 rows, but place items on a 3rd column and a 3rd row:
+                  
+                  .container {
+                    grid-template-rows: 1fr 2fr;
+                    grid-template-columns: 1fr 100px;
+                  
+                    grid-auto-rows: 125px;
+                    grid-auto-columns: 1fr;
+                  }
+                  
+                  .item-1 {
+                    grid-column: 3;
+                  }
+                  
+                  .item-2 {
+                    grid-row: 3;
+                  }
+                  We placed our two items outside of the grid we’ve defined so the 3rd column and row are auto-generated, but we control their size with grid-auto-rows and grid-auto-columns. You can see the result below with our item-1 occupying a 1fr column and our item-2 occupying a 125px row:
+                  
+                  Item 1
+                  Item 2
+                  🐊 Alligator.io recommends ⤵
+                  Advanced CSS and Sass: Flexbox, Grid, Animations and More!
+                  ⓘ About this affiliate link
+                  See also
+                  grid-auto-flow
+                  more css
+                  Comparing CSS Pseudo-Classes: nth-child vs nth-of-type
+                  CSS Hex Code Colors with Alpha Values
+                  Understanding Specificity in CSS
+                  Change Text Case with CSS's text-transform Property
+                  all css posts
+                  follow us @alligatorio
+                  site sponsors
+                  Corvid by Wix
+                  Web Application Development
+                  
+                  Fast, easy & reliable testing for anything that runs in a browser
+                  
+                  learn more →
+                  
+                  stay in the loop with our monthly newsletter:
+                  you@awesome.com
+                  ↑
+                    Tweet It
+                  SPONSORED BY HOTJAR — LEARN MORE
+                  
+                  HOTJAR
+                  See how your visitors are really using your website.
+                  TRY IT FOR FREE
+                  Fullstack Advanced React & GraphQL
+                  Learn React + GraphQL by building an online store
+                  ⓘ About this affiliate link
+                  
+                  MongoDB Atlas
+                  Work smarter — use MongoDB Atlas and offload the database maintenance to the experts.
+                  
+                  Hotjar
+                  See how your visitors are really using your website.
+                  Catch up with the latest in front-end web dev with our monthly newsletter:
+                  🦄 you@unicorn.com
+                   
+                  Write for Us
+                  About
+                  Credits
+                  Contact
+                  Privacy
+                  Support us on Patreon • Advertise
+                  
+                  Note that we link to certain 3rd party products via affiliate or sponsored links. You can learn more</div>
+              <div class="box2">second box
+              </div>
+              <div class="box3">third box</div>
+            </div>
         
+            <footer>
+          
+              
+        <p>copyrights &copy;</p>
+    
+                </footer>
     </body>
 </html>

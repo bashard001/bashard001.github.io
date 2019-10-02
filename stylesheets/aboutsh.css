@@ -5,7 +5,9 @@ body, html {
   color: #777;
 }
 .header {
-    position: relative;
+    position: sticky;
+    top: 0px;
+    z-index: 1;
     width: 100%;
     height: 100px;
     color: #fff;
@@ -46,20 +48,63 @@ body, html {
     color: black;
   }
 
-  * {
-    box-sizing: border-box;
+  .container {
+
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    grid-auto-rows: auto;
+    grid-gap: 1em;
+    max-width: 1500px;
+    margin: auto;
+    padding: 25px;
+    
+
+  }
+
+  .container > div {
+
+    background-color: #777;
+
+
+
+  }
+
+  .imgab {
+
+    max-width: 500px;
+    max-height: 450px;
+  }
+
+  .box1 {
+    max-width: 500px;
+    padding: 25px;
+
+    border-radius: 20px;
+    
+
+  color: white;
+
+  grid-row: 1/3;
+
+
+
+
   }
 
 
-
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-  footer {
+  .lastrow {
 
     display: block;
+
+  }
+
+  footer {
+    color:#ddd;
+    background-color:#282E34;
+    text-align:center;
+    padding:50px 80px;
+    align-items: center; 
+    justify-content: center;
   }
 
   
