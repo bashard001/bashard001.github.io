@@ -99,7 +99,22 @@ h3 {
       color: white;
       text-decoration: none;
   }
-
+  #alphaq span#a {
+    display: inline;
+  }
+  
+  #alphaq:hover span#a {
+    display: none;
+  }
+  
+  #alphaq span#b {
+    display: none;
+  }
+  
+  #alphaq:hover span#b {
+    display: inline;
+  }
+  
   #right {
       position: relative;
       float: right;
