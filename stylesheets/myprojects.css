@@ -1,0 +1,120 @@
+body, html {
+    height: 100%;
+    font: 400 15px/1.8 "Lato", sans-serif;
+    margin: 0;
+    color: #777;
+  }
+  .header {
+      position: sticky;
+      top: 0px;
+      z-index: 1;
+      width: 100%;
+      height: 100px;
+      color: #fff;
+      background: #30948D;
+      font-family: sans-serif;
+  }
+  
+  #left {
+      float: left;
+      position: relative;
+      left: 5%;
+      
+    }
+  
+    #left a {
+        color: white;
+        text-decoration: none;
+    }
+  
+    #right {
+        position: relative;
+        float: right;
+        top: 20px;
+        right: 5%;
+    }
+  
+    #right a {
+      float: left;
+      color: #f2f2f2;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 17px;
+    }
+  
+    #right a:hover {
+      background-color: rgb(97, 163, 91);
+      color: black;
+    }
+  
+    .container {
+  
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-auto-rows: auto;
+      grid-gap: 1em;
+      max-width: 1500px;
+      margin: auto;
+      padding: 25px;
+      
+  
+    }
+    .imgab {
+  
+      max-width: 500px;
+      max-height: 450px;
+    }
+  
+    .box1 {
+      max-width: 500px;
+      min-height: 250px;
+      max-height: 400px;
+      padding: 25px;
+  
+      border-radius: 20px;
+      
+    color: white;
+    background-image: url("passwordbg.jpg");
+    background-position: center;
+    object-fit: cover;
+    text-decoration: none;
+  
+    }
+    .caption {
+        position: relative;
+        top: 50%;
+        width: 100%;
+        text-align: center;
+      }
+      
+      .caption span.box {
+        color: #fff;
+        font-size: 25px;
+        letter-spacing: 10px;
+        text-align: center;
+      }
+  
+  
+    .lastrow {
+  
+      display: block;
+  
+    }
+  
+    footer {
+        bottom: 0;
+      color:#ddd;
+      background-color:#282E34;
+      text-align:center;
+      padding:50px 80px;
+      align-items: center; 
+      justify-content: center;
+    }
+  
+    
+  
+    button :hover{
+  
+      background-color: aqua;
+    }
