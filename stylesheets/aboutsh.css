@@ -1,20 +1,27 @@
+.maincontainer{
+  background-image: url("images/gridlook.jpg");
+  background-size: cover;
+  widows: 100%;
+}
 .container {
 
     display: grid;
     grid-template-columns: 2fr 3fr;
     grid-auto-rows: auto;
-    grid-gap: 1em;
     max-width: 1500px;
     margin: auto;
+    grid-gap: 1em;
     padding: 25px;
+    
     
 
   }
 
   .container > div {
 
-    background-color: #777;
+    max-width: 1500px;
 
+    background-color: #777;
 
 
   }

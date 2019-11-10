@@ -26,6 +26,8 @@
     </section>
   </nav>
 
+  <div class="maincontainer">
+
   <div class="container">
     <div class="box1">
 
@@ -41,21 +43,6 @@
       grid). Let’s take this example where we define 2 columns and 2 rows, but place items on a 3rd column and a 3rd
       row:
 
-      .container {
-      grid-template-rows: 1fr 2fr;
-      grid-template-columns: 1fr 100px;
-
-      grid-auto-rows: 125px;
-      grid-auto-columns: 1fr;
-      }
-
-      .item-1 {
-      grid-column: 3;
-      }
-
-      .item-2 {
-      grid-row: 3;
-      }
       We placed our two items outside of the grid we’ve defined so the 3rd column and row are auto-generated, but we
       control their size with grid-auto-rows and grid-auto-columns. You can see the result below with our item-1
       occupying a 1fr column and our item-2 occupying a 125px row:
@@ -114,6 +101,7 @@
     <div class="box2">second box
     </div>
     <div class="box3">third box</div>
+  </div>
   </div>
 
   <footer>

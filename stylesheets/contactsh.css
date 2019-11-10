@@ -23,6 +23,15 @@ input[type=text], textarea {
 margin-top: 0px;
 padding: 20px;
 }
+h2{
+  margin-top: 0px;
+}
+.container {
+  padding-top: 10px;
+  background-image: url("images/gridlook.jpg");
+  background-size: cover;
+}
+
 
 div.row {
   padding: 25px;
