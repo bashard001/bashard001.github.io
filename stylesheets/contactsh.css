@@ -1,54 +1,4 @@
-body, html {
-  height: 100%;
-  font: 400 15px/1.8 "Lato", sans-serif;
-  margin: 0;
-  color: #777;
-}
-.header {
-    position: sticky;
-    top: 0px;
-    z-index: 1;
-    width: 100%;
-    height: 100px;
-    color: #fff;
-    background: #30948D;
-    font-family: sans-serif;
-}
-
-#left {
-    float: left;
-    position: relative;
-    left: 5%;
-    
-  }
-
-  #left a {
-      color: white;
-      text-decoration: none;
-  }
-
-  #right {
-      position: relative;
-      float: right;
-      top: 20px;
-      right: 5%;
-  }
-
-  #right a {
-    float: left;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-  }
-
-  #right a:hover {
-    background-color: rgb(97, 163, 91);
-    color: black;
-  }
-
-  * {
+* {
     box-sizing: border-box;
   }
 input[type=text], textarea {
@@ -87,11 +37,6 @@ div.column1 img {
   display: table;
   clear: both;
 }
-  footer {
-
-    display: block;
-  }
-
   
 
   button :hover{

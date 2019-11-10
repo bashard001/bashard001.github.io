@@ -1,25 +1,3 @@
-body, html {
-  height: 100%;
-  font: 400 15px/1.8 "Lato", sans-serif;
-  margin: 0;
-  color: #777;
-}
-
-
-.header {
-    position: sticky;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    
-    top: 0px;
-    z-index: 1;
-    width: 100%;
-    min-height: 100px;
-    color: #fff;
-    background: #30948D;
-    font-family: sans-serif;
-    
-}
 
 .bg1, .bg2, .bg3 {
   position: relative;
@@ -33,17 +11,17 @@ body, html {
 
 
 .bg1 {
-  background-image: url("bashar4.jpg");
+  background-image: url("images/bashar4.jpg");
   min-height: 90%;
 }
 
 .bg2 {
-  background-image: url("basharone.jpg");
+  background-image: url("images/basharone.jpg");
   min-height: 50%;
 }
 
 .bg3 {
-  background-image: url("bashar3.jpg");
+  background-image: url("images/bashar3.jpg");
   min-height: 50%;
 }
 
@@ -90,18 +68,6 @@ h3 {
   color: #111;
 }
 
-
-#left {
-    float: left;
-    position: relative;
-    left: 8%;
-    
-  }
-
-  #left a {
-      color: white;
-      text-decoration: none;
-  }
   #alphaq span#a {
     display: inline;
   }
@@ -117,75 +83,11 @@ h3 {
   #alphaq:hover span#b {
     display: inline;
   }
-  
-  #right {
-      margin-left: auto;
-      align-self: center;
-      top: 20px;
-      margin-right: 8%;
-  }
+ 
   img{
     position: relative;
     top: 3px;
 
   }
 
-  #right a {
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-  }
-
-  #right a:hover {
-    background-color: rgb(97, 163, 91);
-    color: black;
-    border-radius: 20px;
-  }
-
-  footer {
-    display: flex;
-  }
-
-  @media screen and (max-width:800px){
-
-    #left {
-      position: relative;
-      top:25px;
-      max-width: 150px;
-      font-size: 8px;
-
-    }
-    #right a{
-      position: relative;
-      top: 15px;
-      padding: 0px 5px;
-    }
-    
-  }
-  @media (max-width: 500px) {
-    .header {
-      position: sticky;
-      display: grid;
-      grid-template-columns:1fr;
-      
-      top: 0px;
-      z-index: 1;
-      width: 100%;
-      min-height: 150px;
-      color: #fff;
-      background: #30948D;
-      font-family: sans-serif;
-      
-  }
-  #right {
-    margin-left: 10px;
-    align-self: baseline;
-    top: 20px;
-    margin-right: 22px;
-  
-  }
-    
-  }
   
