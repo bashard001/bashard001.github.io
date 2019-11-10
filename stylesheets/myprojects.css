@@ -108,9 +108,8 @@
     }
     @media (max-width: 950px){
       .container{
+        max-width: 250px;
       grid-template-columns: repeat(auto-fit, 250px);
-      }
-      .boxA {
-        margin-left: 12px;
+      margin: auto;
       }
     }
