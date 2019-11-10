@@ -8,14 +8,17 @@ body, html {
 
 .header {
     position: sticky;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     
     top: 0px;
     z-index: 1;
     width: 100%;
-    height: 100px;
+    min-height: 100px;
     color: #fff;
     background: #30948D;
     font-family: sans-serif;
+    
 }
 
 .bg1, .bg2, .bg3 {
@@ -91,7 +94,7 @@ h3 {
 #left {
     float: left;
     position: relative;
-    left: 5%;
+    left: 8%;
     
   }
 
@@ -116,10 +119,10 @@ h3 {
   }
   
   #right {
-      position: relative;
-      float: right;
+      margin-left: auto;
+      align-self: center;
       top: 20px;
-      right: 5%;
+      margin-right: 8%;
   }
   img{
     position: relative;
@@ -128,7 +131,6 @@ h3 {
   }
 
   #right a {
-    float: left;
     color: #f2f2f2;
     text-align: center;
     padding: 14px 16px;
@@ -162,3 +164,28 @@ h3 {
     }
     
   }
+  @media (max-width: 500px) {
+    .header {
+      position: sticky;
+      display: grid;
+      grid-template-columns:1fr;
+      
+      top: 0px;
+      z-index: 1;
+      width: 100%;
+      min-height: 150px;
+      color: #fff;
+      background: #30948D;
+      font-family: sans-serif;
+      
+  }
+  #right {
+    margin-left: 10px;
+    align-self: baseline;
+    top: 20px;
+    margin-right: 22px;
+  
+  }
+    
+  }
+  
