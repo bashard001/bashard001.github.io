@@ -21,7 +21,7 @@ body, html {
   #left {
       float: left;
       position: relative;
-      left: 8%;
+      left: 10%;
       
     }
   
@@ -34,7 +34,7 @@ body, html {
       margin-left: auto;
       align-self: center;
       top: 20px;
-      margin-right: 8%;
+      margin-right: 10%;
     }
   
     #right a {
@@ -49,6 +49,12 @@ body, html {
       background-color: rgb(97, 163, 91);
       color: black;
     }
+
+    /* .include{
+      display: grid;
+      grid-template-columns: 1fr;
+      height: 100%;
+    } */
   
     .container {
   
@@ -56,40 +62,77 @@ body, html {
       grid-template-columns: 1fr 1fr 1fr 1fr;
       grid-auto-rows: auto;
       grid-gap: 1em;
-      max-width: 1500px;
+      width: 100%;
+      height: 100%;
       margin: auto;
-      padding: 25px;
+      padding-right: auto;
+      background-image: url("monument-valley-1593318.jpg");
+    background-position: center;
+    background-size: cover;
       
   
     }
-  
-    .box1 {
+    .a1{
+      background-image: url("passwordbg.jpg");
+    background-position: center;
+    background-size: cover;
+    margin: 23px auto;
+    }
+    .a2{
+      background-image: url("quizAPP.jpg");
+    background-position: center;
+    background-size: cover;
+    margin: 23px auto;
+    }
+    .a3{
+      background-image: url("weatherdash.jpg");
+    background-position: center;
+    background-size: cover;
+    margin: 23px auto;
+    }
+    .a4{
+      background-image: url("calendarday.jpg");
+    background-position: center;
+    background-size: cover;
+    margin: 23px auto;
+    }
+    .boxA {
       display: grid;
       grid-template-columns:  1fr ;
       max-width: 250px;
-      min-height: 150px;
-      max-height: 400px;
-      padding: 25px;
-  
+      min-height: 180px;
+      max-height: 250px;
       border-radius: 20px;
-      
-    color: white;
-    background-image: url("passwordbg.jpg");
-    background-position: center;
-    background-size: cover;
-    text-decoration: none;
+      color: white;
+      text-decoration: none;
   
     }
+    .boxA:hover{
+    box-shadow: 4px 4px #ddd;
+    }
     .caption {
-        position: relative;
-        top: 50%;
-        width: 100%;
+      opacity: 1;
+
         text-align: center;
+        padding-top: 50%;
+        border-radius: 20px;  
+
       }
+
+      .caption:hover {
+        opacity: .7;
+
+        text-align: center;
+        background-color: #777;
+
+      }
+      .caption:hover .box {color: black;}
       
       .caption span.box {
-        color: #fff;
+        opacity: 1;
+        color: rgb(201, 76, 76);
         font-size: 25px;
+        font-weight: bold;
         letter-spacing: 10px;
         text-align: center;
       }
