@@ -8,9 +8,6 @@ body, html {
   
   .header {
       position: sticky;
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      
       top: 0px;
       z-index: 1;
       width: 100%;
@@ -20,23 +17,33 @@ body, html {
       font-family: sans-serif;
       
   }
+
+  .headerContainer {
+    display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      max-width: 80%;
+      margin: auto;
+  }
+
   #left {
+    max-width: 250px;
     float: left;
     position: relative;
-    left: 8%;
     
   }
 
   #left a {
+    
       color: white;
       text-decoration: none;
   }
+
   #right {
     margin-left: auto;
     align-self: center;
     top: 20px;
-    margin-right: 8%;
 }
+
 #right a {
     color: #f2f2f2;
     text-align: center;
@@ -49,6 +56,25 @@ body, html {
     background-color: rgb(97, 163, 91);
     color: black;
     border-radius: 20px;
+  }
+  #alphaq{
+    max-width: 250px;
+  }
+  
+  #alphaq span#a {
+    display: inline;
+  }
+  
+  #alphaq:hover span#a {
+    display: none;
+  }
+  
+  #alphaq span#b {
+    display: none;
+  }
+  
+  #alphaq:hover span#b {
+    display: inline;
   }
 
 footer {
@@ -82,9 +108,6 @@ footer {
   @media (max-width: 500px) {
     .header {
       position: sticky;
-      display: grid;
-      grid-template-columns:1fr;
-      
       top: 0px;
       z-index: 1;
       width: 100%;
@@ -93,6 +116,12 @@ footer {
       background: #30948D;
       font-family: sans-serif;
       
+  }
+  .headerContainer {
+    display: grid;
+      grid-template-columns: 1fr;
+      max-width: 80%;
+      margin: auto;
   }
   #right {
     margin-left: 10px;

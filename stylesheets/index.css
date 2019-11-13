@@ -72,21 +72,7 @@ h3 {
   color: #111;
 }
 
-  #alphaq span#a {
-    display: inline;
-  }
   
-  #alphaq:hover span#a {
-    display: none;
-  }
-  
-  #alphaq span#b {
-    display: none;
-  }
-  
-  #alphaq:hover span#b {
-    display: inline;
-  }
  
   img{
     position: relative;
