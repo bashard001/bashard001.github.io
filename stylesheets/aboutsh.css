@@ -35,6 +35,11 @@
   }
 
   .box1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-gap: 1em;
+    
     max-width: 100%;
     padding: 25px;
 
@@ -42,6 +47,9 @@
     
   color: white;
 
+  }
+  .box2{
+    align-self: center;
   }
   
 
@@ -76,12 +84,12 @@
   }
   @media (max-width: 500px){
     .container{
-      max-width: 370px;
+      max-width: 350px;
       margin: auto;
     
     }
     .card{
-      width: 320px;
+      width: 300px;
       padding: 20px;
   
       margin-left: 5px;
