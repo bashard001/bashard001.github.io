@@ -18,6 +18,14 @@
     padding: 25px;
 
   }
+  .pagetitle{
+    grid-column: span 2;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color:#30948D;
+    border-radius: 10px;
+  }
 
   p.text{
     text-indent: 5%;
@@ -36,7 +44,7 @@
     border-radius: 15px;
   }
 
-  .box1 {
+  .mainbox {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
@@ -69,33 +77,34 @@
   @media(max-width: 1100px){
     .container{
       max-width: 700px;
-      grid-template-columns: repeat(auto-fill, 700px);
-      padding: 0px;
       margin: auto;
-      padding: 0px;
       
     }
-    .card{
-      width: 650px;
-  
+    .mainbox{
+      grid-template-columns: repeat(auto-fill, 80vw);
+      padding: 20px;
       margin: auto;
-      margin-top: 20px;
-      align-self: center;
+    }
+    .pagetitle{
+      grid-column: span 1;
+      text-align: center;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      background-color:#30948D;
+      border-radius: 8px;
     }
 
   }
   @media (max-width: 500px){
     .container{
-      max-width: 350px;
+      max-width: 500px;
       margin: auto;
     
     }
-    .card{
-      width: 300px;
-      padding: 20px;
-  
-      margin-left: 5px;
-      margin-top: 15px;
-      align-self: center;
+    .mainbox{
+      grid-template-columns: repeat(auto-fill, 80vw);
+      padding: 15px;
+      margin: 0px;
+
     }
   }

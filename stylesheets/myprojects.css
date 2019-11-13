@@ -15,6 +15,22 @@
   min-height: 100%;
   margin: auto;
   padding-right: auto;
+  padding-top: 25px;
+}
+
+.pagetitle {
+  grid-column: span 4;
+  max-width: 1500px;
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background-color: #30948D;
+  border-radius: 10px;
+  color: aliceblue;
+}
+
+.pagetitle p {
+  margin: 0px;
 }
 
 .a1 {
@@ -72,7 +88,7 @@
 }
 
 .caption {
-  ` opacity: 1;
+  opacity: 1;
   text-align: center;
   padding-top: 50%;
   border-radius: 20px;
@@ -110,5 +126,21 @@ button :hover {
     max-width: 75%;
     grid-template-columns: repeat(auto-fit, 250px);
     margin: auto;
+  }
+  .pagetitle {
+    grid-column: span 2;
+    max-width: 1500px;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: #30948D;
+    border-radius: 10px;
+    color: aliceblue;
+  }
+}
+
+@media (max-width: 700px) {
+  .pagetitle {
+    grid-column: span 1;
   }
 }

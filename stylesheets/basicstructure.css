@@ -21,7 +21,7 @@ body, html {
   .headerContainer {
     display: grid;
       grid-template-columns: repeat(2, 1fr);
-      max-width: 80%;
+      max-width: 80vw;
       margin: auto;
   }
 
@@ -76,6 +76,7 @@ body, html {
   #alphaq:hover span#b {
     display: inline;
   }
+  
 
 footer {
     display: block;
