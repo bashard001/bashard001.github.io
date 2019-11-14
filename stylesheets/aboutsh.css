@@ -23,7 +23,7 @@
     text-align: center;
     padding-top: 15px;
     padding-bottom: 15px;
-    background-color:#30948D;
+    background-color: rgba(48,148,141,.5);
     border-radius: 10px;
   }
 
@@ -90,7 +90,7 @@
       text-align: center;
       padding-top: 10px;
       padding-bottom: 10px;
-      background-color:#30948D;
+      background-color: rgba(48,148,141,.5);
       border-radius: 8px;
     }
 

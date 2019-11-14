@@ -24,7 +24,7 @@
   text-align: center;
   padding-top: 15px;
   padding-bottom: 15px;
-  background-color: #30948D;
+  background-color: rgba(48,148,141,.5);
   border-radius: 10px;
   color: aliceblue;
 }
@@ -83,9 +83,7 @@
   text-decoration: none;
 }
 
-.boxA:hover {
-  box-shadow: 4px 4px #ddd;
-}
+
 
 .caption {
   opacity: 1;
@@ -133,7 +131,7 @@ button :hover {
     text-align: center;
     padding-top: 15px;
     padding-bottom: 15px;
-    background-color: #30948D;
+    background-color: rgba(48,148,141,.5);
     border-radius: 10px;
     color: aliceblue;
   }
