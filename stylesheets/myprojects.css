@@ -124,6 +124,7 @@ button :hover {
     max-width: 75%;
     grid-template-columns: repeat(auto-fit, 250px);
     margin: auto;
+    padding-left: 8%;
   }
   .pagetitle {
     grid-column: span 2;
