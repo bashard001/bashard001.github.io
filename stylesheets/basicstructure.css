@@ -21,11 +21,12 @@ body, html {
   .headerContainer {
     display: grid;
       grid-template-columns: repeat(2, 1fr);
-      max-width: 80vw;
+      max-width: 85vw;
       margin: auto;
   }
 
   #left {
+    
     max-width: 250px;
     float: left;
     position: relative;
@@ -39,6 +40,8 @@ body, html {
   }
 
   #right {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     margin-left: auto;
     align-self: center;
     top: 20px;
@@ -49,6 +52,7 @@ body, html {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+    min-width: 75px;
     font-size: 17px;
   }
 
@@ -59,6 +63,7 @@ body, html {
   }
   #alphaq{
     max-width: 250px;
+    margin-left: 5%;
   }
   
   #alphaq span#a {
@@ -102,7 +107,7 @@ footer {
     #right a{
       position: relative;
       top: 15px;
-      padding: 0px 5px;
+      /* padding: 0px 5px; */
     }
     
   }
@@ -118,11 +123,18 @@ footer {
       font-family: sans-serif;
       
   }
+  #alphaq{
+    
+    margin-left:35%;
+  }
   .headerContainer {
     display: grid;
       grid-template-columns: 1fr;
-      max-width: 80%;
+      max-width: 100%;
       margin: auto;
+  }
+  #left{
+    max-width: 100%;
   }
   #right {
     margin-left: 10px;
