@@ -75,7 +75,7 @@
 .boxA {
   display: grid;
   grid-template-columns: 1fr;
-  max-width: 250px;
+  max-width: 225px;
   min-height: 180px;
   max-height: 250px;
   border-radius: 20px;
@@ -124,7 +124,7 @@ button :hover {
     max-width: 75%;
     grid-template-columns: repeat(auto-fit, 250px);
     margin: auto;
-    padding-left: 8%;
+    padding-left: 9%;
   }
   .pagetitle {
     grid-column: span 2;
