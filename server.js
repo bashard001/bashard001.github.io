@@ -2,10 +2,12 @@ const fs = require("fs");
 const express = require("express");
 const app = express()
 
+var port = process.env.PORT || 3000;
+
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
-app.use(express.static("public"))
+app.use(express.static("../bashard001.github.io"))
 
 app.post("/form", function(req, res){
     var newCharacter = req.body;
@@ -16,7 +18,7 @@ app.post("/form", function(req, res){
 
 })
 
-app.listen(3000, function(){
+app.listen(port, function(){
     console.log("app listening... at port 3000");
 })
 
