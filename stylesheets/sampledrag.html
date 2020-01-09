@@ -1,0 +1,33 @@
+<!DOCTYPE HTML>
+<html>
+   <head>
+   <script>
+function allowDrop(ev) {
+    ev.preventDefault();
+}
+
+function drag(ev) {
+    ev.dataTransfer.setData("text", ev.target.id);
+}
+
+function drop(ev) {
+    ev.preventDefault();
+    var data = ev.dataTransfer.getData("text");
+    ev.target.appendChild(document.getElementById(data));
+}
+   </script>
+   </head>
+<body>
+
+   <div id="box" ondrop="drop(event)"
+   ondragover="allowDrop(event)"
+   style="border:1px solid black; 
+   width:200px; height:200px"></div>
+  <svg id ="image" width="2000" height="2000" draggable="true" ondragstart="drag(event)">
+    <circle cx="80" cy="80" r="50" fill="green" />
+ </svg>
+   <img id="image" src="test.png" draggable="true"
+   ondragstart="drag(event)" width="150" height="50" alt="" />
+
+</body>
+</html>
