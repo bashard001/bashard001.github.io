@@ -24,6 +24,12 @@ body, html {
       max-width: 85vw;
       margin: auto;
   }
+  .totop{
+    display: inline;
+    position: fixed;
+    top: 90%;
+    left: 95%;
+  }
 
   #left {
     
