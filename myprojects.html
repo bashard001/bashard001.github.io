@@ -28,12 +28,12 @@
       </section>
     </div>
   </nav>
-  <a class="totop"  href="#alphaq">
+  <a class="totop" href="#alphaq">
     <svg width="60" height="60">
       <rect x="5" y="5" rx="12" ry="12" width="50" height="50"
-      style="fill:red;stroke:black;stroke-width:5;opacity:0.5" />
+        style="fill:red;stroke:black;stroke-width:5;opacity:0.5" />
       <text fill="#ffffff" font-size="38" x="19" y="42">&#8657;</text>
-    Sorry, your browser does not support inline SVG.
+      Sorry, your browser does not support inline SVG.
     </svg>
   </a>
 
@@ -45,22 +45,26 @@
         <p>(Web applications)</p>
       </div>
 
-      <a href="https://bashard001.github.io/AstronomyQuiz" target="_blank" class="boxA a2">
+      <a href="https://bashard001.github.io/AstronomyQuiz" target="_blank" class="boxA a2" data-toggle="tooltip" data-html="true" data-placement="bottom"
+        title="This application is built using 95% JavaScript <br/> highest score is save to localstorage" >
         <div class="caption">
           <span class="box">Sample Quiz</span>
         </div>
       </a>
-      <a href="https://bashard001.github.io/weather-dashboard" target="_blank" class="boxA a3">
+      <a href="https://bashard001.github.io/weather-dashboard" target="_blank" class="boxA a3" data-toggle="tooltip" data-html="true" data-placement="bottom"
+      title="For this app I used JQuery, bootstrap, Weather api<br/>and localstorage to save search history">
         <div class="caption">
           <span class="box">Check the Weather</span>
         </div>
       </a>
-      <a href="https://bashard001.github.io/Day-Planner" target="_blank" class="boxA a4">
+      <a href="https://bashard001.github.io/Day-Planner" target="_blank" class="boxA a4" data-toggle="tooltip" data-html="true" data-placement="bottom"
+      title="This app shows my ability to build an application <br /> with the least amount of code to save size" >
         <div class="caption">
           <span class="box">Day Calender</span>
         </div>
       </a>
-      <a href="https://jilienecircelli.github.io/sports-scene" target="_blank" class="boxA a5">
+      <a href="https://jilienecircelli.github.io/sports-scene" target="_blank" class="boxA a5" data-toggle="tooltip" data-html="true" data-placement="bottom"
+      title="Using multiple APIs to find local sporting events and buying your ticket">
         <div class="caption">
           <span class="box">Sports Events</span>
         </div>
@@ -77,22 +81,39 @@
 
     <div></div>
 
-    <div><a href="https://www.linkedin.com/in/bashar-daseh-hamed/" target="_blank"><img src="stylesheets/images/linkedin.png"
-          alt="linkedin" width="25px" height="25px" style="margin: 0px 3px;">
+    <div><a href="https://www.linkedin.com/in/bashar-daseh-hamed/" target="_blank"><img
+          src="stylesheets/images/linkedin.png" alt="linkedin" width="25px" height="25px" style="margin: 0px 3px;">
         </img></a>
       <a href="https://github.com/bashard001" target="_blank"><img src="stylesheets/images/github-sign.png"
           alt="linkedin" width="25px" height="25px" style="margin: 0px 3px;">
         </img></a>
-        <a href="https://www.instagram.com/beau_daseh/" target="_blank"><img src="stylesheets/images/instagram.png"
+      <a href="https://www.instagram.com/beau_daseh/" target="_blank"><img src="stylesheets/images/instagram.png"
           alt="linkedin" width="25px" height="25px" style="margin: 0px 3px;">
         </img></a>
-      
-      </div>
+
+    </div>
     <p>copyrights &copy;</p>
 
 
   </footer>
-  <script src="server.js"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+  <script>
+    $(function () {
+      $("[data-toggle='tooltip']").tooltip({
+        animation: true,
+        fade:true,
+        delay: {show: 250, hide: 100}
+      })
+    })
+  </script>
 </body>
 
 </html>

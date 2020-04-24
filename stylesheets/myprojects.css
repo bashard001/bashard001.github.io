@@ -93,13 +93,31 @@
 }
 
 .caption:hover {
-  opacity: .7;
+  animation: tips 2s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes tips {
+  from {opacity: 1;
+    text-align: center;
+    padding-top: 50%;
+    border-radius: 20px;}
+    to {
+      opacity: .7;
   text-align: center;
   background-color: #777;
+  color: black;
+    }
 }
 
 .caption:hover .box {
-  color: black;
+  animation: boxtext 1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes boxtext {
+  from {color: white;}
+  to {color: black;}
 }
 
 .caption span.box {
