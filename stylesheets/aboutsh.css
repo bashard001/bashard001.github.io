@@ -27,6 +27,11 @@
   border-radius: 10px;
 }
 
+#skillList {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  
+}
 p.text {
   text-indent: 5%;
 }
