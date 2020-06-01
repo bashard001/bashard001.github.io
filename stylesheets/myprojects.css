@@ -72,6 +72,12 @@
   margin: 23px auto;
 }
 
+.a6 {
+  background-image: url("images/gabrielle-henderson-HJckKnwCXxQ-unsplash.jpg");
+  background-position: center;
+  background-size: cover;
+  margin: 23px auto;
+}
 .boxA {
   display: grid;
   grid-template-columns: 1fr;
