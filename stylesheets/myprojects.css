@@ -78,6 +78,12 @@
   background-size: cover;
   margin: 23px auto;
 }
+
+.a7 {
+  background-image: url("images/snakegame.PNG");
+  background-size: cover;
+  margin: 23px auto;
+}
 .boxA {
   display: grid;
   grid-template-columns: 1fr;
