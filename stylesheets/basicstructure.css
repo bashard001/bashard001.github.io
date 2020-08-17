@@ -1,5 +1,5 @@
 body, html {
-    height: 95%;
+    height: 100%;
     font: 400 15px/1.8 "Lato", sans-serif;
     margin: 0;
     color: #777;
@@ -11,7 +11,7 @@ body, html {
       top: 0px;
       z-index: 1;
       width: 100%;
-      min-height: 100px;
+      min-height: 90px;
       color: #fff;
       background: #30948D;
       font-family: sans-serif;
@@ -20,6 +20,7 @@ body, html {
 
   .headerContainer {
     display: grid;
+
       grid-template-columns: repeat(2, 1fr);
       max-width: 85vw;
       margin: auto;
@@ -47,19 +48,35 @@ body, html {
 
   #right {
     display: grid;
+ 
     grid-template-columns: repeat(3, 1fr );
+    font-weight: 600;
+height: 100%;
     margin-left: auto;
     align-self: center;
-    top: 20px;
+ 
 }
 
+
 #right a {
+ display: flex;
+margin:auto;
+  justify-content: center;
+ max-height: 70%;
     color: #f2f2f2;
     text-align: center;
-    padding: 14px 16px;
+    padding: 10px 16px;
     text-decoration: none;
     min-width: 75px;
-    font-size: 17px;
+    font-size: 16px;
+    border-radius: 10px;
+    -webkit-box-shadow: 0 13px 27px 0 rgba(163, 48, 53, 0.25);
+    box-shadow: 0 13px 27px 0 rgba(163, 48, 53, 0.25);
+    -webkit-transition: .9s;
+    transition: .9s;
+  }
+  #right a p {
+    padding: 0px 5px;
   }
 
   #right a:hover {
@@ -74,14 +91,18 @@ body, html {
   
   #alphaq span#a {
     display: inline;
+  
+ 
   }
   
   #alphaq:hover span#a {
     display: none;
+
   }
   
   #alphaq span#b {
     display: none;
+
   }
   
   #alphaq:hover span#b {
@@ -115,8 +136,8 @@ footer {
     }
     #right a{
       position: relative;
-      top: 15px;
-       padding: 10px 0px; 
+     
+       padding: 10px 10px; 
     }
     
   }
@@ -151,7 +172,7 @@ footer {
   #right {
     margin-left: 10px;
     align-self: baseline;
-    top: 20px;
+  
   }
     
   }
