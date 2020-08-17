@@ -36,7 +36,7 @@ body, html {
     
     max-width: 250px;
     float: left;
-    position: relative;
+    
     
   }
 
@@ -65,7 +65,7 @@ margin:auto;
  max-height: 70%;
     color: #f2f2f2;
     text-align: center;
-    padding: 10px 16px;
+    padding: 0px 10px;
     text-decoration: none;
     min-width: 75px;
     font-size: 16px;
@@ -90,23 +90,57 @@ margin:auto;
   }
   
   #alphaq span#a {
-    display: inline;
+    display: block;
+    white-space: nowrap;
+    
+    animation: aniBashar 2s;
+
   
- 
+    animation-fill-mode: forwards;
   }
   
   #alphaq:hover span#a {
     display: none;
-
   }
   
   #alphaq span#b {
-    display: none;
-
+  display: none;
+  
+  white-space: nowrap;
   }
   
   #alphaq:hover span#b {
-    display: inline;
+display: block;
+overflow: hidden;
+
+  animation: aniBD  1.5s ;
+  
+  animation-fill-mode: forwards;
+  
+  }
+
+  @keyframes aniBD  {
+    from{width: 0px;
+    
+      opacity: 1;}
+      75% {
+        font-size: 50px;
+      }
+    to{width: 200px;
+      font-size: 2rem;
+      opacity: 1;
+      
+    }
+    }
+ @keyframes aniBashar {
+
+  from{
+width: 0px;
+  }
+  to{
+width: 200px;
+  }
+
   }
   img.icon{
     width: 23px; 
@@ -128,7 +162,7 @@ footer {
   @media (max-width:800px){
 
     #left {
-      position: relative;
+     
       top:25px;
       max-width: 150px;
       font-size: 8px;
@@ -138,6 +172,13 @@ footer {
       position: relative;
      
        padding: 10px 10px; 
+    }
+    .headerContainer {
+   
+  
+        grid-template-columns: 3fr 7fr;
+        max-width: 90vw;
+        margin: auto;
     }
     
   }
