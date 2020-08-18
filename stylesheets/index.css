@@ -38,7 +38,15 @@
   color: #fff;
   padding: 18px;
   font-size: 25px;
+  border-radius: 5px;
   letter-spacing: 10px;
+  transition: 1s;
+  box-shadow: 0 13px 27px 0 rgba(12, 7, 7,.2);
+}
+.caption span.lastBox:hover {
+  border-radius: 20px;
+  -webkit-box-shadow: 0 13px 27px 0 rgba(12, 7, 7);
+  box-shadow: 0 13px 27px 0 rgba(12, 7, 7);
 }
 .projects{
   color: #fff;
@@ -61,8 +69,15 @@ span.firstbox{
   background-color: rgba(48, 148, 141, .65);
   font-size: 25px;
   color: #111;
+  transition: 1s;
+  box-shadow: 0 13px 27px 0 rgba(12, 7, 7,.5);
   
   
+}
+span.firstbox:hover {
+  border-radius: 20px;
+  -webkit-box-shadow: 0 13px 27px 0 rgba(12, 7, 7);
+  box-shadow: 0 13px 27px 0 rgba(12, 7, 7);
 }
 
 h3 {
