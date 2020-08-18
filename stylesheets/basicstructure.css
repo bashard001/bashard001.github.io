@@ -113,7 +113,7 @@ margin:auto;
 display: block;
 overflow: hidden;
 
-  animation: aniBD  1.5s ;
+  animation: aniBD  .9s ;
   
   animation-fill-mode: forwards;
   
@@ -124,7 +124,7 @@ overflow: hidden;
     
       opacity: 1;}
       75% {
-        font-size: 50px;
+        font-size: 45px;
       }
     to{width: 200px;
       font-size: 2rem;
