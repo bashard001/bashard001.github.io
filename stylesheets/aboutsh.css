@@ -16,6 +16,7 @@
   margin: auto;
   grid-gap: 1em;
   padding: 25px;
+  
 }
 
 .pagetitle {
@@ -27,17 +28,21 @@
   border-radius: 10px;
 }
 
-#skillList {
+.skillList {
   display: grid;
   grid-template-columns: 1fr 1fr;
   
+}
+
+ li:hover{
+  font-size: 16px;
 }
 p.text {
   text-indent: 5%;
 }
 
 .card {
-  background-color: #777;
+  background-color: rgba(119, 119, 119, .8)
 }
 
 .contactLink {
@@ -48,13 +53,14 @@ p.text {
 }
 
 .contactLink:hover {
-  animation: linkanimation 1s;
+  animation: linkanimation .5s;
   animation-fill-mode: forwards;
 }
 
 @keyframes linkanimation {
   to {
-    color: blue;
+  font-size: 18px;
+    color: rgb(82, 161, 115);
   }
 }
 
@@ -74,6 +80,7 @@ p.text {
   padding: 25px;
   border-radius: 20px;
   color: white;
+
 }
 
 .box2 {
