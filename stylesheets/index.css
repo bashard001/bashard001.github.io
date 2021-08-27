@@ -1,4 +1,3 @@
-
 .bg1, .bg2, .bg3 {
   position: relative;
   opacity: 0.65;
@@ -6,9 +5,7 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-
 }
-
 
 .bg1 {
   background-image: url("images/bashar4.jpg");
@@ -16,7 +13,7 @@
 }
 
 .bg2 {
-  background-image: url("images/basharone.jpg");
+  background-image: url("images/desk1.jpg");
   min-height: 50%;
 }
 
@@ -32,28 +29,29 @@
   text-align: center;
   color: #000;
 }
+
 .wave-line {
   position: absolute;
   bottom: 0;
   z-index: 100;
-   left: 0;
-   width: 100%;
-   overflow: hidden;
-   line-height: 0;
-   transform: rotate(180deg);
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
 }
 
 .wave-line svg {
-   position: relative;
-   display: block;
-   width: calc(144% + 1.3px);
-   height: 50px;
-   
+  position: relative;
+  display: block;
+  width: calc(144% + 1.3px);
+  height: 50px;
 }
 
 .wave-line .shape-fill {
-   fill: #ffffff;
+  fill: #ffffff;
 }
+
 .caption span.box {
   background-color: #111;
   color: #fff;
@@ -62,39 +60,36 @@
   border-radius: 5px;
   letter-spacing: 10px;
   transition: 1s;
-  box-shadow: 0 13px 27px 0 rgba(12, 7, 7,.2);
+  box-shadow: 0 13px 27px 0 rgba(12, 7, 7, .2);
 }
+
 .caption span.lastBox:hover {
   border-radius: 20px;
   -webkit-box-shadow: 0 13px 27px 0 rgba(12, 7, 7);
   box-shadow: 0 13px 27px 0 rgba(12, 7, 7);
 }
-.projects{
+
+.projects {
   color: #fff;
   text-decoration: none;
 }
 
 .firstcaption {
-
   position: absolute;
-  top:75%;
-  width:100%;
+  top: 75%;
+  width: 100%;
   text-align: center;
-
 }
 
-
-span.firstbox{
-
+span.firstbox {
   padding: 10px 25px;
   background-color: rgba(48, 148, 141, .65);
   font-size: 25px;
   color: #111;
   transition: 1s;
-  box-shadow: 0 13px 27px 0 rgba(12, 7, 7,.5);
-  
-  
+  box-shadow: 0 13px 27px 0 rgba(12, 7, 7, .5);
 }
+
 span.firstbox:hover {
   border-radius: 20px;
   -webkit-box-shadow: 0 13px 27px 0 rgba(12, 7, 7);
@@ -108,12 +103,7 @@ h3 {
   color: #111;
 }
 
-  
- 
-  img{
-    position: relative;
-    top: 3px;
-
-  }
-
-  
+img {
+  position: relative;
+  top: 3px;
+}
