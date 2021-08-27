@@ -1,44 +1,56 @@
 *::after::before {
   box-sizing: border-box;
 }
-
 .maincontainer {
-  background-image: url("images/gridlook.jpg");
+  position: relative;
+  width: 100%;
+  background-image: url("./images/gridlook.jpg");
   background-size: cover;
-  widows: 100%;
+  padding: auto;
+  min-height: 90vh;
+  padding-bottom: 5vh;
 }
 
-.container {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-auto-rows: auto;
-  max-width: 1400px;
-  margin: auto;
-  grid-gap: 1em;
-  padding: 25px;
-  
+#top {
+  padding-top: 3.5vh;
 }
 
 .pagetitle {
-  grid-column: span 2;
+  width: 90%;
   text-align: center;
-  padding-top: 15px;
-  padding-bottom: 15px;
+  padding: 15px 0px;
   background-color: rgba(48, 148, 141, .5);
   border-radius: 10px;
+  margin: 25px auto;
+  transition: width .7s;
+}
+
+.mainbox:hover .pagetitle {
+  width: 65%;
 }
 
 .skillList {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  
+  grid-template-rows: auto;
+  grid-column-gap: 1.2em;
 }
 
- li:hover{
-  font-size: 16px;
+.aboutlist {
+  font-size: 15px;
+  text-shadow: none;
+  transition: font-size .5s, text-shadow .5s;
 }
+
+.aboutlist:hover {
+  cursor: default;
+  font-size: 17px;
+  text-shadow: 2px 2px 2px #464444;
+}
+
 p.text {
-  text-indent: 5%;
+  text-indent: 4%;
+  padding: 0px 15px 0px 40px;
 }
 
 .card {
@@ -50,22 +62,17 @@ p.text {
   text-decoration: none;
   margin: 0px 5px;
   color: blanchedalmond;
+  transition: font-size .5s, color .5s;
 }
 
 .contactLink:hover {
-  animation: linkanimation .5s;
-  animation-fill-mode: forwards;
-}
-
-@keyframes linkanimation {
-  to {
   font-size: 18px;
-    color: rgb(82, 161, 115);
-  }
+  color: #30948D;
 }
 
 .imgab {
   display: flex;
+  background-image: url("./images/graduation.jpg");
   background-position: center;
   background-size: cover;
   margin-left: 1vw;
@@ -77,57 +84,83 @@ p.text {
 }
 
 .mainbox {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: auto;
-  grid-gap: 1em;
-  max-width: 100%;
-  padding: 25px;
-  border-radius: 20px;
+  position: relative;
+  width: 85%;
+  padding: 35px;
+  border-radius: 15px;
   color: white;
-
+  margin: auto;
+  transition: border-radius .4s;
 }
 
-.box2 {
-  align-self: center;
+.mainbox:hover {
+  border-radius: 20px;
 }
 
-.lastrow {
-  display: block;
+.mainbox:hover .imgab {
+  margin-left: 2vw;
+}
+
+.aitem {
+  position: relative;
+  order: 1;
+  justify-content: center;
+}
+
+.aitem3 {
+  order: 4;
+}
+
+.aitem4 {
+  order: 3;
+  grid-column: span 2;
+}
+
+.aitem2 {
+  order: 2;
+  align-content: center;
+  justify-content: center;
+  margin: auto;
+}
+
+.aitem5 {
+  order: 5;
+  padding-right: 12px;
 }
 
 button :hover {
   background-color: aqua;
 }
 
-@media(max-width: 1100px) {
-  .container {
-    max-width: 700px;
-    margin: auto;
-  }
-  .mainbox {
-    grid-template-columns: repeat(auto-fill, 80vw);
-    padding: 20px;
-    margin: auto;
-  }
-  .pagetitle {
-    grid-column: span 1;
-    text-align: center;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    background-color: rgba(48, 148, 141, .5);
-    border-radius: 8px;
-  }
+.cardcontent {
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1em;
 }
 
-@media (max-width: 500px) {
-  .container {
-    max-width: 500px;
-    margin: auto;
+@media (max-width:650px) {
+  .cardcontent {
+    display: inline;
   }
   .mainbox {
-    grid-template-columns: repeat(auto-fill, 80vw);
-    padding: 15px;
-    margin: 0px;
+    padding: 20px;
+  }
+  .aitem {
+    order: 1;
+  }
+  .aitem3 {
+    order: 4;
+  }
+  .aitem4 {
+    order: 3;
+    grid-column: span 2;
+  }
+  .aitem2 {
+    order: 2;
+  }
+  .aitem5 {
+    order: 5;
+    padding-left: 5px;
   }
 }

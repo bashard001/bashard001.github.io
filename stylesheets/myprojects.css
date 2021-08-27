@@ -84,6 +84,12 @@
   background-size: cover;
   margin: 23px auto;
 }
+.a8 {
+  background-image: url("images/clothes.jpg");
+  background-position: center;
+  background-size: cover;
+  margin: 23px auto;
+}
 .boxA {
   display: grid;
   grid-template-columns: 1fr;
