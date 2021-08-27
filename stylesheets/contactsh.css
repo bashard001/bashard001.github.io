@@ -12,15 +12,18 @@ input[type=text], textarea {
 }
 
 .column {
-  float: left;
-  width: 50%;
-  margin-top: 6px;
-  padding: 20px;
+  position: relative;
+  display: flex;
+  margin: auto;
+  width: 60vw;
+  padding: 20px 30px;
+  border-radius: 15px;
   -webkit-box-shadow: 0 13px 27px 0 rgba(163, 48, 53, 0.25);
   box-shadow: 0 13px 27px 0 rgba(31, 4, 6, 0.25);
   -webkit-transition: .9s;
   transition: .9s;
 }
+
 .column1{
   float: left;
   width: 50%;
@@ -42,7 +45,9 @@ h2{
   margin-top: 0px;
 }
 .container {
-  padding-top: 10px;
+  position: relative;
+  min-height: 90vh;
+ 
   background-image: url("images/gridlook.jpg");
   background-size: cover;
 }
