@@ -22,12 +22,27 @@ body, html {
   max-width: 85vw;
   margin: auto;
 }
-
-.totop {
+#goup {
   display: inline;
   position: fixed;
+  place-items: center;
   top: 90%;
   left: 95%;
+  background-color: red;
+  padding: 5px 7px;
+  justify-content: center;
+  border-radius: 7px;
+ border: black solid 1.5px;
+  transition: opacity .8s, transform .5s;
+}
+
+#goup:hover {
+  transform: rotate(360deg);
+}
+
+.totop {
+  color: white;
+  padding: 0px 3px;
 }
 
 #left {
