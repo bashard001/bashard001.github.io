@@ -73,36 +73,22 @@ div.column1 img {
 
     background-color: aqua;
   }
-  @media screen and (max-width:666px){
 
-    #left {
-      position: relative;
-      top:25px;
-      max-width: 150px;
-      font-size: 8px;
-
-    }
-    #right a{
-      position: relative;
-      top: 15px;
-      padding: 0px 5px;
-    }
-    .column {
-      float: left;
-      width: 100%;
-      margin-top: 6px;
-      padding: 20px;
-    }
-    .column1{
-      float: left;
-      width: 100%;
-    margin-top: 0px;
-    padding: 20px;
-    }
-    div.column1 img {
-      width: 100%;
+  @media (max-width:600px) {
+    .row {
+      margin: 18px 18px 0px;
     }
     p {
       margin: 15px;
+    }
+    .column{
+      width: 97vw;
+      padding: 10px;
+    }
+  }
+  @media (max-width: 1100px) and (min-width: 600px) {
+    .column{
+      width: 75vw;
+      padding: 20px;
     }
   }
